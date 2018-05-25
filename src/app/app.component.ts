@@ -1,21 +1,21 @@
 import { Component } from './decorators/component.decorator';
 
 @Component({
-  selector: 'rainbow'
+  selector: 'rainbow',
+  template: `<div class="rainbow"></div>`
 })
 export class App {
   static tagName: string;
 
   constructor() {}
 
-  onInit(): void {
-    const components = document.getElementsByClassName(App.tagName);
+  onInit(): void {}
+
+  afterViewInit(): void {
     setInterval(() => {
-      if (components.length) {
-        Array.from(components).forEach(
-          (x: HTMLElement) => (x.style.borderColor = this.randomColor())
-        );
-      }
+      Array.from(document.querySelectorAll('.rainbow')).forEach(
+        (x: HTMLElement) => (x.style.borderColor = this.randomColor())
+      );
     }, 800);
   }
 

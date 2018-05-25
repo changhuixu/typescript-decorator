@@ -1,3 +1,3 @@
-export function param(x: any, name: string, index: number) {
-  console.log(x, name, index);
+export function param(target: any, name: string, index: number) {
+  console.log(target, name, index);
 }
