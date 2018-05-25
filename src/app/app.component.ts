@@ -1,4 +1,5 @@
 import { Component } from './decorators/component.decorator';
+import { NotNull } from './decorators/not-null.decorator';
 
 @Component({
   selector: 'rainbow',
@@ -9,7 +10,9 @@ export class App {
 
   constructor() {}
 
-  onInit(): void {}
+  onInit(): void {
+      this.test(13098);
+  }
 
   afterViewInit(): void {
     setInterval(() => {
@@ -21,5 +24,10 @@ export class App {
 
   private randomColor(): string {
     return '#' + (((1 << 24) * Math.random()) | 0).toString(16);
+  }
+
+  @NotNull
+  private test(n: number) {
+    console.log(n);
   }
 }
