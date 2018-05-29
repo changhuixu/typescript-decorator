@@ -2,6 +2,7 @@ import { Component } from './decorators/component.decorator';
 import { NotNull } from './decorators/not-null.decorator';
 import { Store } from './store/store';
 import { Action } from './store/action';
+import { deprecated } from './decorators/deprecated.decorator';
 
 @Component({
   selector: 'rainbow',
@@ -14,7 +15,7 @@ export class App {
 
   onInit(): void {
     this.test(13098);
-
+    this.test2();
     this.storeTest();
   }
 
@@ -33,6 +34,11 @@ export class App {
   @NotNull
   private test(n: number) {
     console.log(n);
+  }
+
+  @deprecated()
+  private test2() {
+    console.log('test2');
   }
 
   private storeTest() {
