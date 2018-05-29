@@ -11,7 +11,10 @@
     "start": "webpack-dev-server --open",
     "build": "webpack"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@types/lodash.template": "^4.4.3",
+    "lodash.template": "^4.4.0"
+  },
   "devDependencies": {
     "babylon": "^7.0.0-beta.30",
     "clean-webpack-plugin": "^0.1.19",

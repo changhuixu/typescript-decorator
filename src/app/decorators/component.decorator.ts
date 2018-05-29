@@ -1,4 +1,4 @@
-export function Component(options: { selector: string; template: string }) {
+export function Component(options: { selector: string, template: string }) {
   return (target: any) => {
     target.tagName = options.selector;
 
