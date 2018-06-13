@@ -8,20 +8,26 @@ function main() {
   // app.onInit();
   // app.afterViewInit();
   new AppModule().bootstrap();
-  const svc = new PersonsService();
-  svc.getPerson(1);
-  svc.getPerson(1);
-  svc.getPerson(1);
-  svc.getPersons();
-  svc.getPersons();
+  
   const p = new Person(1, 'asd');
   p.saySomething('I love playing halo');
   p.sayBye();
+  //p.saySomething(null);   // NotNull
+
   //   p.sayHi();
   //   p.sayBye();
   //   p.sayBye();
   //   p.sayHi = () => console.log('hello');
   //   p.sayHi();
+  
+    // memoize()
+    // const svc = new PersonsService();
+    // svc.getPerson(1);
+    // svc.getPerson(1);
+    // svc.getPerson(1);
+    // svc.getPersons();
+    // svc.getPersons();
+    
 }
 
 main();
