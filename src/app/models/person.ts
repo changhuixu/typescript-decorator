@@ -6,14 +6,14 @@ import { NotNull } from '../decorators/not-null.decorator';
 export class Person {
   constructor(public readonly id: number, public name: string) {}
 
-  //   @readonly
   @log
+  // @readonly
+  @time
   sayHi() {
     console.log('Hi');
   }
 
   @time
-  @log
   sayBye() {
     console.log('Bye');
   }
@@ -21,6 +21,7 @@ export class Person {
   @log
   @NotNull
   saySomething(something: string): string {
+    console.log(2)
     return this.name + ' says: ' + something;
   }
 }

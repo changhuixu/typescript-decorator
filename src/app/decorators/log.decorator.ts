@@ -3,6 +3,7 @@ export function log(
   propertyKey: string,
   descriptor: PropertyDescriptor
 ) {
+  console.log(1);
   if (descriptor === undefined) {
     descriptor = Object.getOwnPropertyDescriptor(target, propertyKey);
   }

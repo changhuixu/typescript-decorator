@@ -6,6 +6,7 @@ export function readonly(
   if (descriptor === undefined) {
     descriptor = Object.getOwnPropertyDescriptor(target, propertyKey);
   }
+
   descriptor.writable = false;
   return descriptor;
 }

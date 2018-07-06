@@ -8,20 +8,24 @@ function main() {
   // const app = new App();
   // app.onInit();
   // app.afterViewInit();
+  
   new AppModule().bootstrap();
 
-  const s = new Student('Cody');
-  console.log(s);
-  console.log(JSON.stringify(s));
+  // const s = new Student('John');
+  // console.log(s);
+  // console.log(JSON.stringify(s));
 
-  const p = new Person(1, 'asd');
-  p.saySomething('I love playing halo');
-  p.sayBye();
-  //p.saySomething(null);   // NotNull
+  // const p = new Person(1, 'asd');
+  // console.log(0);
+  // // p.saySomething('I love playing toys');
+  // p.sayBye();
+  // p.sayBye();
+  // p.saySomething(null);   // NotNull
 
-  //   p.sayHi();
-  //   p.sayBye();
-  //   p.sayBye();
+    // p.sayHi();
+
+    // p.sayBye();
+    // p.sayBye();
   //   p.sayHi = () => console.log('hello');
   //   p.sayHi();
 

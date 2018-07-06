@@ -6,7 +6,7 @@ import { deprecated } from './decorators/deprecated.decorator';
 
 @Component({
   selector: 'rainbow',
-  template: `<div class="rainbow"></div>`
+  template: `<div class="box"></div>`
 })
 export class App {
   static tagName: string;
@@ -21,7 +21,7 @@ export class App {
 
   afterViewInit(): void {
     setInterval(() => {
-      Array.from(document.querySelectorAll('.rainbow')).forEach(
+      Array.from(document.querySelectorAll('.box')).forEach(
         (x: HTMLElement) => (x.style.borderColor = this.randomColor())
       );
     }, 800);

@@ -8,9 +8,9 @@ export function time(
   }
   const originalMethod = descriptor.value;
   let i = 0;
-  const id = `${propertyKey}_${i++}`;
-
+  
   descriptor.value = function(...args: any[]) {
+    const id = `${propertyKey}_${i++}`;
     console.time(id);
     const result = originalMethod.apply(this, args);
     console.timeEnd(id);

@@ -1,6 +1,6 @@
 import { serializable, serialize } from '../decorators/serializable.decorator';
 
-@serializable('')
+@serializable('ST')
 export class Student {
   @serialize('Language') public lang = 'JavaScript';
 
