@@ -4,12 +4,8 @@
     margin: 50px auto;
 }
 
-.rainbow {
+.box {
     width: 200px;
     height: 100px;
-    border-top-left-radius: 130px;
-    border-top-right-radius: 130px;
-    border: 30px solid;
-    border-color: blue;
-    border-bottom: 0;
+    border: 1px blue solid;
 }
