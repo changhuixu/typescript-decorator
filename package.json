@@ -12,18 +12,18 @@
     "build": "webpack"
   },
   "dependencies": {
-    "@types/lodash.template": "^4.4.3",
-    "lodash.template": "^4.4.0"
+    "@types/lodash.template": "^4.4.6",
+    "lodash.template": "^4.5.0"
   },
   "devDependencies": {
     "babylon": "^7.0.0-beta.30",
-    "clean-webpack-plugin": "^0.1.19",
-    "copy-webpack-plugin": "^4.5.1",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.1.1",
     "html-webpack-plugin": "^3.2.0",
-    "ts-loader": "^4.4.2",
-    "typescript": "^2.8.3",
-    "webpack": "^4.15.1",
-    "webpack-cli": "^3.0.8",
-    "webpack-dev-server": "^3.1.4"
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.5",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
   }
 }
